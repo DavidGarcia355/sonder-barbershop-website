@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#171717">
+<meta name="description" content="Sonder Barbershop website concept for Pilsen, Chicago. Meet the barbers and try the on-page booking experience.">
+<title>Sonder Barbershop | Pilsen, Chicago | Website Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script defer src="main.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="concept-bar"><span>SONDER / PILSEN, CHICAGO</span><span>INDEPENDENT WEBSITE CONCEPT FOR THE SHOP</span></div>
+<header class="site-header">
+<a class="brand" href="#top" aria-label="Sonder Barbershop home"><img class="brand-logo" src="assets/sonder-logo.png" alt=""><span>Sonder Barbershop</span></a>
+<button class="pole-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="pole-menu"><span class="pole-cap"></span><span class="pole-shaft"></span><span class="pole-cap"></span><small>MENU</small></button>
+</header>
+<nav class="pole-menu" id="pole-menu" aria-label="Barber pole menu" inert>
+<p class="menu-kicker">THE SHOP / YOUR WAY <span>///</span></p>
+<a href="#top"><span>01</span>Home <b>&#8599;</b></a>
+<a href="#barbers"><span>02</span>About / Team <b>&#8599;</b></a>
+<a href="#services"><span>03</span>Services <b>&#8599;</b></a>
+<a href="#work"><span>04</span>Work <b>&#8599;</b></a>
+<a href="#booking"><span>05</span>Book <b>&#8599;</b></a><a href="#visit"><span>06</span>Visit us <b>&#8599;</b></a>
+<div class="menu-contact">1600 S Halsted St / Chicago, IL 60608<br><a href="tel:+13126479768">(312) 647-9768</a></div>
+</nav>
+<main id="main">
+<section class="hero" id="top">
+<div class="hero-geometry" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="hero-inner">
+<div class="hero-copy">
+<p class="eyebrow"><span class="red-block"></span> PILSEN / CHICAGO / 1600 S HALSTED</p>
+<h1>Every cut tells<br><em>your story.</em></h1>
+<p class="hero-description">Precision barbering in the heart of Pilsen. Fades, beard work, hot towel shaves &mdash; walk in or book your chair.</p>
+<div class="hero-actions"><a class="action action-book" href="#booking">BOOK AN APPOINTMENT <b>&#8599;</b></a><a class="action action-ghost" href="#barbers">MEET THE TEAM <b>&#8599;</b></a></div>
+</div>
+<div class="hero-portrait" aria-hidden="true"></div>
+</div>
+<div class="hero-baseline"><span>WALK-INS WELCOME. APPOINTMENTS RECOMMENDED.</span><span>SCROLL / EXPLORE &#8595;</span></div>
+</section>
+<section class="reviews" aria-labelledby="reviews-title"><div class="reviews-head"><div><span>GOOGLE REVIEWS</span><h2 id="reviews-title">What others are saying</h2></div><div class="review-source-links"><a href="https://www.google.com/search?q=sonder+barber+shop+chicago+reviews#lrd=0x880e2d0a1eb3fd8f:0x44888324107a9f97,1,,,," target="_blank" rel="noopener noreferrer">All Google reviews &#8599;</a></div></div><div class="reviews-window" tabindex="0" role="region" aria-label="Google reviews. Scroll left or right to browse; automatic movement resumes after interaction."><div class="reviews-track" id="reviews-track"></div></div></section>
+<section class="booking-section" id="booking">
+<div class="section booking-inner">
+<div class="section-label"><span>01 / BOOKING</span><span class="angled-rule"></span></div>
+<div class="section-heading dark"><div><p class="kicker">SONDER BARBERSHOP</p><h2>Book your<br><em>appointment.</em></h2></div><p>Pick a service and a barber below, then choose a time that works for you.</p></div>
+<div class="booking-shell">
+<div class="booking-aside"><p class="booking-aside-label">SONDER / APPOINTMENTS</p><h3>Every cut<br>tells your<br>story.</h3><p>1600 S Halsted St<br>Chicago, IL 60608</p><span>DESIGN CONCEPT / SAMPLE TIMES</span></div>
+<div class="booking-flow">
+<div class="demo-banner"><strong>INTERACTIVE CONCEPT</strong><span>Sample times only. This page does not send a booking to Sonder.</span></div>
+<ol class="booking-progress" aria-label="Booking steps"><li class="current"><span>01</span> Service</li><li><span>02</span> Barber</li><li><span>03</span> Time</li><li><span>04</span> Review</li></ol>
+<div id="booking-panel" aria-live="polite"></div>
+</div>
+</div>
+<p class="booking-footnote">The live shop would need to connect this flow to its real calendar before accepting appointments. For an appointment today, <a href="tel:+13126479768">call or text Sonder</a>.</p>
+</div></section>
+<section class="barbers-section" id="barbers">
+<div class="section">
+<div class="section-label light"><span>02 / BEHIND THE CHAIR</span><span class="angled-rule"></span></div>
+<div class="section-heading"><div><p class="kicker">MEET THE TEAM</p><h2>Barbers who<br><em>know their craft.</em></h2></div><p></p></div>
+<div class="barber-select" role="group" aria-label="Choose a barber">
+<button class="barber-tile active" type="button" data-barber="gabriel" aria-pressed="true"><span class="tile-index">01 / OWNER</span><span class="tile-photo"><img src="assets/sonder-gabriel.jpg" alt="" loading="lazy"></span><span class="tile-name">GABRIEL<br>SALAZAR</span><span class="tile-role">OWNER &amp; MASTER BARBER</span><span class="tile-arrow">&#8599;</span></button>
+<button class="barber-tile" type="button" data-barber="erick" aria-pressed="false"><span class="tile-index">02 / NEW AT SONDER</span><span class="tile-photo"><img src="assets/erick-portrait.png" alt="Portrait of Erick Rios" loading="lazy"></span><span class="tile-name">ERICK<br>RIOS</span><span class="tile-role">BARBER / NEW TO SONDER</span><span class="tile-arrow">&#8599;</span></button>
+<article class="barber-tile coming-soon"><span class="tile-index">03 / NEXT CHAIR</span><span class="tile-photo empty-chair" aria-hidden="true"><span>+</span></span><span class="tile-name">COMING<br>SOON</span><span class="tile-role">A NEW NAME WILL GO HERE</span></article>
+<article class="barber-tile coming-soon"><span class="tile-index">04 / NEXT CHAIR</span><span class="tile-photo empty-chair" aria-hidden="true"><span>+</span></span><span class="tile-name">COMING<br>SOON</span><span class="tile-role">A NEW NAME WILL GO HERE</span></article>
+</div>
+<div class="barber-detail" id="barber-detail" aria-live="polite">
+<div class="detail-number">01 <span>/ 04</span></div>
+<div><p class="detail-kicker">OWNER &amp; MASTER BARBER</p><h3>GABRIEL<br>SALAZAR.</h3><p class="detail-copy">Sonder's owner. Skin fades and straight razor shaves are his signature.</p></div>
+<a class="detail-action" href="#booking">BOOK WITH GABRIEL <span>&#8599;</span></a>
+</div>
+<p class="barber-note">Erick is new to Sonder. Sample booking times in this concept are not live availability.</p>
+</div>
+</section>
+<div class="tool-wipe" aria-hidden="true"><span class="tool-icon">&#9986;</span><span>THE CUT / THE CRAFT / THE DETAILS</span><span class="tool-icon">&#9986;</span></div>
+<section class="section services-section" id="services">
+<div class="section-label"><span>03 / SERVICES</span><span class="angled-rule"></span></div>
+<div class="section-heading dark"><div><p class="kicker red-text">WHAT WE DO</p><h2>Cuts built for<br><em>your look.</em></h2></div><p>From signature fades to hot towel shaves, every service starts with a real conversation about what you want.</p></div>
+<div class="service-grid">
+<article class="service-card featured"><span class="service-num">01 / THE CLASSIC</span><div><h3>FULL<br>HAIRCUT</h3><p>Fades, tapers, and classic cuts finished with detail.</p></div><a href="#booking" aria-label="Try the booking demo for full haircut">&#8599;</a></article>
+<article class="service-card"><span class="service-num">02 / THE COMBO</span><div><h3>HAIRCUT<br>&amp; BEARD</h3><p>A full haircut paired with a beard trim and razor line-up.</p></div><a href="#booking" aria-label="Try the booking demo for haircut and beard">&#8599;</a></article>
+<article class="service-card"><span class="service-num">03 / THE DETAIL</span><div><h3>BEARD<br>TRIM</h3><p>Shape, line, and finish your facial hair.</p></div><a href="#booking" aria-label="Try the booking demo for beard trim">&#8599;</a></article>
+<article class="service-card"><span class="service-num">04 / THE RESET</span><div><h3>HOT TOWEL<br>SHAVE</h3><p>A traditional shave with a warm towel and straight razor.</p></div><a href="#booking" aria-label="Try the booking demo for hot towel shave">&#8599;</a></article>
+</div>
+<p class="service-note">Select a service to try the on-page booking concept. Sample times are for demonstration only.</p>
+</section>
+<section class="work-section" id="work">
+<div class="section work-inner"><div class="section-label light"><span>04 / THE WORK</span><span class="angled-rule"></span></div><div class="section-heading"><div><p class="kicker">PORTFOLIO</p><h2>The work.</h2></div><p>A closer look at Erick's work. Scroll to move between cuts.</p></div>
+<div class="work-viewer"><div class="work-stage"><img id="work-image" src="assets/haircut.png" alt="Haircut from Erick Rios's portfolio"><span class="work-stage-label">ERICK'S PORTFOLIO / 01</span></div><div class="work-controls" aria-label="Explore Erick's work"><button type="button" data-work="0" class="active"><span>01</span> THE CUT</button><button type="button" data-work="1"><span>02</span> THE DETAIL</button><button type="button" data-work="2"><span>03</span> THE FINISH</button><p>Scroll through the work or choose a detail.</p></div></div>
+</div>
+</section>
+<section class="visit-section" id="visit"><div class="section visit-inner"><div><div class="section-label light"><span>05 / FIND US</span><span class="angled-rule"></span></div><p class="kicker">SONDER BARBERSHOP</p><h2>Visit us.</h2><p class="visit-address">1600 S Halsted St<br>Chicago, IL 60608</p><div class="visit-actions"><a class="action action-red" href="https://www.google.com/maps/search/?api=1&amp;query=1600+S+Halsted+St+Chicago+IL+60608" target="_blank" rel="noopener noreferrer">GET DIRECTIONS <b>&#8599;</b></a><a class="action action-ghost" href="tel:+13126479768">CALL / TEXT THE SHOP <b>&#8599;</b></a></div></div><div class="hours-card"><div class="hours-top"><span>SONDER<br>BARBERSHOP</span><span>OPEN / PILSEN</span></div><h3>THE<br>HOURS.</h3><dl><div><dt>TUE &mdash; FRI</dt><dd>10 AM &mdash; 7 PM</dd></div><div><dt>SATURDAY</dt><dd>9 AM &mdash; 5 PM</dd></div><div><dt>SUN &mdash; MON</dt><dd>CLOSED</dd></div></dl><p>Walk-ins welcome. Appointments recommended.</p></div></div></section>
+<section class="faq-section" id="faq"><div class="section faq-inner"><div><div class="section-label"><span>06 / GOOD TO KNOW</span><span class="angled-rule"></span></div><h2>Good to<br><em>know.</em></h2></div><div class="faq-list"><details><summary>Do I need an appointment or can I walk in?</summary><p>Walk-ins are always welcome, but booking ahead guarantees your chair and cuts your wait time.</p></details><details><summary>What's your cancellation policy?</summary><p>We ask for at least 24 hours notice so we can offer your slot to someone else.</p></details><details><summary>Do you take walk-ins for kids' cuts?</summary><p>Yes, though booking ahead is recommended on weekends when we're busiest.</p></details><details><summary>What payment methods do you accept?</summary><p>Cash, all major cards, and contactless/Apple Pay.</p></details><details><summary>How early should I arrive for my first visit?</summary><p>A few minutes early is plenty &mdash; we'll have you in the chair close to your booked time.</p></details></div></div></section></main>
+<div class="cut-transition" aria-hidden="true"></div><div class="cut-word" aria-hidden="true"></div>
+<footer><div class="footer-brand">SONDER<small>BARBERSHOP / CHICAGO</small></div><div><a href="#barbers">Barbers</a><a href="#services">Services</a><a href="#work">Work</a><a href="#visit">Visit</a><a href="#faq">FAQ</a></div><p>Independent website concept by David Garcia.<br>Business details sourced from Sonder's public site.</p></footer>
+</body></html>
