@@ -95,3 +95,35 @@ html[data-cut]::view-transition-old(root){animation-duration:1.5s!important}
 
 /* The review wheel uses native scrolling so it can be driven by mouse, trackpad, touch, or keyboard. */
 .reviews-window{overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;scrollbar-color:#b29565 #f5f1e9;overscroll-behavior-inline:contain;touch-action:pan-x}.reviews-track{animation:none}.review-card{flex:none}
+
+/* Make the first screen usable without letting the photo's wall lettering cross the headline. */
+.concept-bar{gap:16px;font-size:10px;letter-spacing:.1em}.concept-bar a{text-decoration:none;color:inherit}.concept-bar a:hover{text-decoration:underline;text-underline-offset:3px}
+.hero:before{background:linear-gradient(90deg,#171613 0%,#171613 54%,#171613f5 65%,#17161300 83%),linear-gradient(0deg,#1117,transparent 60%)}
+.hero-inner{align-items:center;padding-top:32px;padding-bottom:32px}
+.hero-copy{position:relative;max-width:690px;padding:34px 38px 30px;background:#171613;border-left:3px solid #b18b4d;box-shadow:15px 20px 50px #0005}
+.hero h1{font-size:clamp(58px,6.4vw,96px);margin:17px 0 18px}
+.hero-description{max-width:530px;margin:0}
+.hero-actions{margin-top:26px;gap:20px}
+.hero-actions .action-ghost{white-space:nowrap}
+.hero-address{display:inline-block;margin-top:23px;font-size:12px;line-height:1.5;font-weight:700;letter-spacing:.03em;color:#e8d8bf;text-decoration:underline;text-underline-offset:4px}
+.hero-address:hover{color:#fff}
+@media(min-width:701px){
+  .hero{background-size:auto 240%;background-position:right center}
+  .hero:before{background:linear-gradient(90deg,#171613 0%,#171613 43%,#171613da 55%,#17161300 72%),linear-gradient(0deg,#1117,transparent 60%)}
+}
+@media(min-width:1600px){.hero{background-size:auto 340%}}
+@media(max-width:700px){
+  .concept-bar{justify-content:center;flex-wrap:wrap;gap:3px 12px;padding:7px 12px;font-size:9px;text-align:center}
+  .hero{min-height:0}
+  .hero-inner{min-height:560px;padding:24px 16px}
+  .hero-copy{max-width:none;width:100%;padding:25px 22px 24px}
+  .hero h1{font-size:clamp(44px,10vw,66px)}
+  .hero-description{line-height:1.5}
+  .hero-actions{margin-top:22px}
+  .hero-address{margin-top:18px;font-size:11px}
+  .hero-baseline{gap:8px;flex-wrap:wrap}
+}
+@media(max-width:450px){
+  .hero-inner{min-height:560px}
+  .hero-actions .action-ghost{white-space:normal}
+}
