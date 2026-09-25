@@ -46,8 +46,15 @@ function update(req,url,x){
   if(end<=start)throw Error('End must be after start.');
   db.prepare('INSERT INTO blocks(barber_id,date,start_min,end_min,reason) VALUES (?,?,?,?,?)').run(x.barberId? id(x.barberId):null,x.date,start,end,typeof x.reason==='string'?x.reason.slice(0,200):'');
  }else if(url.pathname==='/api/admin/booking-status'){
-  const status=string(x.status,10);if(!['pending','accepted','declined','cancelled'].includes(status))throw Error('Invalid status.');
-  const result=db.prepare('UPDATE bookings SET status=? WHERE id=?').run(status,int(x.id,1,1000000000));if(!result.changes)throw Error('Booking not found.');
+  const status=string(x.status,10);if(!['accepted','declined','cancelled'].includes(status))throw Error('Invalid status.');
+  const bookingId=int(x.id,1,1000000000);
+  if(status==='accepted'){
+   const result=db.prepare("UPDATE bookings SET status='accepted' WHERE id=? AND status='pending'").run(bookingId);
+   if(!result.changes)throw Error('Only a pending request can be accepted.');
+  }else{
+   const result=db.prepare('UPDATE bookings SET status=? WHERE id=?').run(status,bookingId);
+   if(!result.changes)throw Error('Booking not found.');
+  }
  }else if(url.pathname==='/api/admin/remove'){
   if(x.type==='hours')db.prepare('DELETE FROM hours WHERE owner=? AND day=? AND start_min=?').run(x.owner==='shop'?'shop':id(x.owner),string(x.day,3),int(x.startMin,0,1439));
   else if(x.type==='block')db.prepare('DELETE FROM blocks WHERE id=?').run(int(x.id,1,1000000000));
